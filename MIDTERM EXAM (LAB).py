@@ -2,25 +2,25 @@ import re
 
 def rem_UpperCaseChars(str):
   regex = "[A-Z]"
-  return (re.sub(regx, "", str)
-
-def rem_LowerCaseChars(str):
-  regex = "[a-Z]"
   return (re.sub(regex, "", str))
 
-def rem_SpecialChars(str);
+def rem_LowerCaseChars(str):
+  regex = "[a-z]"
+  return (re.sub(regex, "", str))
+
+def rem_SpecialChars(str):
   regex = "[^A-Za-z0-9]"
-  return (re.ub(regex, "", str))
+  return (re.sub(regex, "", str))
 
-def rem_NumericChars(str)
+def rem_NumericChars(str):
   regex = "[0-9]"
-  return (re.sub(regex "" str))
+  return (re.sub(regex, "", str))
 
-def rem_NonNumericChars(str)):
+def rem_NonNumericChars(str):
   regex = "[^0-9]"
-  return (re.sub(regex, ""))
+  return (re.sub(regex, "", str))
 
-def print_menu:
+def print_menu(): # def print_menu:
   print("\nOptions:")
   for k in menu_options.keys():
     print (k, '>>', menu_options[k])
@@ -54,7 +54,7 @@ while True:
           rem_NumericChars(str))
   elif option == 5:
     print("Numeric characters: ",
-          rem_NonNumericChar(str))
+          rem_NonNumericChars(str))
   else:
     break
 
